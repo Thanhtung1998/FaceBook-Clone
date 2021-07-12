@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .icon{
+        @apply hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full text-gray-700 cursor-pointer hover:bg-gray-300;
+    }
+    .inputIcon{
+      @apply flex items-center space-x-1 hover:bg-gray-100 flex-grow
+      justify-center p-2 rounded-xl cursor-pointer;
+    }
+    .notification{
+      @apply hidden xl:inline-flex absolute top-0 -right-1 rounded-full bg-red-400 w-5 h-5 flex items-center justify-center text-xs text-gray-600 ;
+    }
+    .stories{
+      @apply  absolute top-0 left-0 object-cover object-fill h-8 w-8 sm:h-8 sm:w-8 md:w-14 md:h-14  lg:h-56 lg:w-32 bg-cover filter brightness-75 rounded-full lg:rounded-3xl;
+    }
+    .ScreenProfile{
+      @apply mx-auto max-w-md md:max-w-lg lg:max-w-2xl object-cover;
+    }
+    .FollowBtn{
+      @apply cursor-pointer outline-none mt-[45px] bg-blue-500 border-none text-white rounded-md flex items-center justify-center pt-[5px] pb-[5px] pr-[10px] pl-[10px] ;
+    }
+  }
+  @layer base{
+    .AvatarProfile{
+        @apply absolute h-[150px] w-[150px] object-cover rounded-full border-solid border-white top-[150px] left-0 right-0 m-auto;
+    }
+    .ImgProfile{
+      @apply relative h-[320px];
+    }
+    .ImgProfileHead{
+      @apply object-cover mt-5 w-full h-[250px] rounded-lg; 
+    }
+    .profileInfo{
+      @apply flex flex-col items-center justify-center font-medium; 
+    }
+    .profileInfoName{
+      @apply text-2xl;
+    }
+    .profileInfoDesc{
+      @apply font-light;
+    }
+  
+}

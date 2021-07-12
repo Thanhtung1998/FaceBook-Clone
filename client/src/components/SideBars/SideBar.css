@@ -1,0 +1,9 @@
+.hest{
+    display: block;
+}
+
+@media (max-width:600px){
+    .hest{
+        display: none;
+    }
+}
